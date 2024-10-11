@@ -1,4 +1,10 @@
 {
+    "engines": {
+        "node": "18.20.4"
+    },
+    
+    "engineStrict": true,
+
     "name": "quarkly-export",
     "scripts": {
         "build": "gatsby build",
