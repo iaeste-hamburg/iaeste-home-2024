@@ -38,6 +38,7 @@ export default (() => {
 			>
 				Contact Us
 			</Override>
+			<Override slot="overrideOverride" width="max-content" />
 			<Override slot="SectionContent" height="initial" />
 		</Components.IaesteHeader>
 		<Section
@@ -390,7 +391,7 @@ export default (() => {
 		</Link>
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"670f7a17b153825dca7dd82d"}>
-				{"a {\n            color: white;\n        }\n\n#logo {\n            width: 160px;\n        }\n# menuentry {\n           width: 110px;\n        }"}
+				{"a {\n            color: white;\n        }\n\n#logo {\n            width: 160px;\n        }\n#menuentry {\n           width: max-content !important;\n        }"}
 			</style>
 		</RawHtml>
 	</Theme>;

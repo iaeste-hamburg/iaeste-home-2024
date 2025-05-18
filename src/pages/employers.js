@@ -25,9 +25,15 @@ export default (() => {
 			<meta name={"msapplication-TileColor"} content={"#2b79ea"} />
 		</Helmet>
 		<Components.IaesteHeader>
-			<Override slot="overrideOverride6" href="https://iaeste-hamburg.gitbook.io/iaeste-knowledge-base" />
 			<Override slot="image" src="https://uploads.quarkly.io/670812fbe5d277001898861a/images/Logo1.png?v=2024-10-10T18:58:50.598Z" id="logo" />
-			<Override slot="overrideOverride3" id="menuentry" />
+			<Override
+				slot="overrideOverride3"
+				id="menuentry"
+				word-break="normal"
+				className="menuentry"
+				width="max-content"
+			/>
+			<Override slot="overrideOverride" width="max-content" />
 		</Components.IaesteHeader>
 		<Section padding="25px 0 75px 0" lg-padding="25px 0 25px 0" justify-content="center" quarkly-title="Hero">
 			<Override
@@ -480,7 +486,7 @@ export default (() => {
 		</Link>
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"670f7a17b153825dca7dd82d"}>
-				{"a {\n            color: white;\n        }\n\n#logo {\n            width: 160px;\n        }\n# menuentry {\n           width: 110px;\n        }"}
+				{"a {\n            color: white;\n        }\n\n#logo {\n            width: 160px;\n        }\n#menuentry {\n           width: max-content !important;\n        }"}
 			</style>
 		</RawHtml>
 	</Theme>;

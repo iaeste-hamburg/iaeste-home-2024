@@ -26,13 +26,21 @@ export default (() => {
 		</Helmet>
 		<Components.IaesteHeader>
 			<Override slot="image" src="https://uploads.quarkly.io/670812fbe5d277001898861a/images/Logo1.png?v=2024-10-10T18:58:50.598Z" id="logo" />
-			<Override slot="overrideOverride4">
-				Incoming{" "}
-				<br />
-				{" "}(for students)
-			</Override>
-			<Override slot="overrideOverride" width="110px" />
-			<Override slot="overrideOverride3" id="menuentry" />
+			<Override
+				slot="overrideOverride4"
+				id="menuentry"
+				word-break="normal"
+				className="menuentry"
+				width="max-content"
+			/>
+			<Override slot="overrideOverride" width="max-content" />
+			<Override
+				slot="overrideOverride3"
+				id="menuentry"
+				word-break="normal"
+				className="menuentry"
+				width="max-content"
+			/>
 		</Components.IaesteHeader>
 		<Section quarkly-title="Hero" padding="25px 0 75px 0" lg-padding="25px 0 25px 0" justify-content="center">
 			<Override
@@ -675,7 +683,7 @@ export default (() => {
 		</Link>
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"670f7a17b153825dca7dd82d"}>
-				{"a {\n            color: white;\n        }\n\n#logo {\n            width: 160px;\n        }\n# menuentry {\n           width: 110px;\n        }"}
+				{"a {\n            color: white;\n        }\n\n#logo {\n            width: 160px;\n        }\n#menuentry {\n           width: max-content !important;\n        }"}
 			</style>
 		</RawHtml>
 	</Theme>;
