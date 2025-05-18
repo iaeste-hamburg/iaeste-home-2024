@@ -11,15 +11,15 @@ const pageStyles = {
         "font": "--headline3",
         "color": "#b30b0b"
     },
-    "about": {
+    "outgoingstudent": {
         "font": "--headline3",
         "color": "#b30b0b"
     },
-    "team": {
+    "incomingstudent": {
         "font": "--headline3",
         "color": "#b30b0b"
     },
-    "work": {
+    "employers": {
         "font": "--headline3",
         "color": "#b30b0b"
     }

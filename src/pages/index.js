@@ -10,11 +10,11 @@ export default (() => {
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
 		<Helmet>
 			<title>
-				Home | Website Example
+				Home | IAESTE Hamburg
 			</title>
-			<meta name={"description"} content={"It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something bigger. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference."} />
-			<meta property={"og:title"} content={"Home | Website Example"} />
-			<meta property={"og:description"} content={"It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something bigger. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference."} />
+			<meta name={"description"} content={"IAESTE Hamburg offers students the opportunity for exclusive  international internships in engineering, science, and related fields. Run by univerity volunteers from Hamburg's universities , the local committee supports both outgoing students seeking placements abroad and incoming interns in Hamburg. They assist with accommodation, cultural activities, and administrative tasks, ensuring a smooth and enriching experience for all participants."} />
+			<meta property={"og:title"} content={"Home | IAESTE Hamburg"} />
+			<meta property={"og:description"} content={"IAESTE Hamburg offers students the opportunity for exclusive  international internships in engineering, science, and related fields. Run by univerity volunteers from Hamburg's universities , the local committee supports both outgoing students seeking placements abroad and incoming interns in Hamburg. They assist with accommodation, cultural activities, and administrative tasks, ensuring a smooth and enriching experience for all participants."} />
 			<meta property={"og:image"} content={"https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/website-example-quarkly.png?v=2020-11-05T19:48:01.806Z"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/670812fbe5d277001898861a/images/IAESTE.svg?v=2024-10-10T18:51:27.162Z"} type={"image/x-icon"} />
 			<link rel={"apple-touch-icon"} href={"https://uploads.quarkly.io/670812fbe5d277001898861a/images/IAESTE.svg?v=2024-10-10T18:51:27.162Z"} />
@@ -390,7 +390,7 @@ export default (() => {
 		</Link>
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"670f7a17b153825dca7dd82d"}>
-				{"a {\n            color: white;\n        }"}
+				{"a {\n            color: white;\n        }\n\n#logo {\n            width: 160px;\n        }\n# menuentry {\n           width: 110px;\n        }"}
 			</style>
 		</RawHtml>
 	</Theme>;

@@ -1,8 +1,8 @@
 module.exports = [
 	"/index/",
-	"/about/",
-	"/team/",
-	"/work/",
+	"/outgoingstudent/",
+	"/incomingstudent/",
+	"/employers/",
 	"/404/",
 	"/",
 	"/404.html"
