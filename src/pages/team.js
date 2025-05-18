@@ -1,9 +1,9 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Box, Section, Button, Image } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Section, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { Override, SocialMedia } from "@quarkly/components";
+import { RawHtml, Override } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
@@ -24,7 +24,9 @@ export default (() => {
 			<meta name={"msapplication-TileImage"} content={"https://uploads.quarkly.io/670812fbe5d277001898861a/images/IAESTE.svg?v=2024-10-10T18:51:27.162Z"} />
 			<meta name={"msapplication-TileColor"} content={"#2b79ea"} />
 		</Helmet>
-		<Components.IaesteHeader />
+		<Components.IaesteHeader>
+			<Override slot="image" width="160px" src="https://uploads.quarkly.io/670812fbe5d277001898861a/images/Logo1.png?v=2024-10-10T18:58:50.598Z" />
+		</Components.IaesteHeader>
 		<Section quarkly-title="Hero" padding="25px 0 75px 0" lg-padding="25px 0 25px 0" justify-content="center">
 			<Override
 				slot="SectionContent"
@@ -642,49 +644,6 @@ export default (() => {
 				</Button>
 			</Box>
 		</Section>
-		<Section
-			margin="0 0 0 0"
-			padding="16px 0 16px 0"
-			box-sizing="border-box"
-			quarkly-title="Footer"
-			justify-content="center"
-		>
-			<Override
-				slot="SectionContent"
-				width="100%"
-				margin="0px 32px 0px 32px"
-				md-margin="0px 16px 0px 16px"
-				min-width="auto"
-			/>
-			<Box
-				display="grid"
-				grid-gap="32px"
-				width="100%"
-				grid-template-columns="repeat(2, 1fr)"
-				sm-grid-gap="16px"
-			>
-				<Box display="flex" align-items="center" sm-flex-wrap="wrap">
-					<Image src="https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-quarkly-logo-grey.svg?v=2020-11-06T17:24:35.270Z" width="28px" height="28px" />
-					<Link
-						white-space="nowrap"
-						font="--base"
-						opacity="0.6"
-						text-decoration-line="initial"
-						text-align="left"
-						margin="1px 0px 0px 10px"
-						hover-text-decoration-line="underline"
-						href="https://quarkly.io/"
-						color="--dark"
-					>
-						Made on Quarkly
-					</Link>
-				</Box>
-				<SocialMedia facebook="https://www.facebook.com/quarklyapp/" twitter="https://twitter.com/quarklyapp" youtube="https://www.youtube.com/channel/UCK5bXs2L0bbSMQ82BQ3hIkw" justify-content="flex-end">
-					<Override slot="link" background="none" border-radius="50%" />
-					<Override slot="icon" color="--dark" />
-				</SocialMedia>
-			</Box>
-		</Section>
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
@@ -707,5 +666,10 @@ export default (() => {
 		>
 			Made on Quarkly
 		</Link>
+		<RawHtml>
+			<style place={"endOfHead"} rawKey={"670f7a17b153825dca7dd82d"}>
+				{"a {\n            color: white;\n        }"}
+			</style>
+		</RawHtml>
 	</Theme>;
 });

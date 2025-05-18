@@ -2,7 +2,7 @@ module.exports = {
     siteMetadata: {
         title: "Quarkly gatsby project",
         description: "",
-        author: "@quarkly",
+        author: "@IAESTE Hamburg",
         siteUrl: "https://example.com"
     },
     plugins: [

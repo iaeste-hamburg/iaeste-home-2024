@@ -185,5 +185,5 @@ export default {
 			}
 		}
 	},
-	"version": 5
+	"version": 7
 }

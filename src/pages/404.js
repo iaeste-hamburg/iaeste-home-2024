@@ -3,7 +3,7 @@ import theme from "theme";
 import { Theme, Link, Image, Button, Section, Text, Box } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { Override, StackItem, Stack, SocialMedia } from "@quarkly/components";
+import { RawHtml, Override, StackItem, Stack, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
 import { MdMenu } from "react-icons/md";
 export default (() => {
@@ -242,5 +242,10 @@ export default (() => {
 		>
 			Made on Quarkly
 		</Link>
+		<RawHtml>
+			<style place={"endOfHead"} rawKey={"670f7a17b153825dca7dd82d"}>
+				{"a {\n            color: white;\n        }"}
+			</style>
+		</RawHtml>
 	</Theme>;
 });

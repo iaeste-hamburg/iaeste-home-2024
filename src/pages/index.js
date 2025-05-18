@@ -1,12 +1,10 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Section, Box, Image, Icon, Strong } from "@quarkly/widgets";
+import { Theme, Link, Strong, Text, Section, Box, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { Override, SocialMedia } from "@quarkly/components";
+import { RawHtml, Override } from "@quarkly/components";
 import * as Components from "components";
-import { FaInstagram, FaMailBulk } from "react-icons/fa";
-import { IoIosPin } from "react-icons/io";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -28,6 +26,19 @@ export default (() => {
 		</Helmet>
 		<Components.IaesteHeader>
 			<Override slot="image" src="https://uploads.quarkly.io/670812fbe5d277001898861a/images/Logo1.png?v=2024-10-10T18:58:50.598Z" width="160px" />
+			<Override
+				slot="button"
+				type="link"
+				href="#footer"
+				text-decoration-line="initial"
+				text-align="center"
+				position="static"
+				padding="auto 18px 0 18px"
+				height="max-content"
+			>
+				Contact Us
+			</Override>
+			<Override slot="SectionContent" height="initial" />
 		</Components.IaesteHeader>
 		<Section
 			lg-padding="25px 0 25px 0"
@@ -48,7 +59,7 @@ export default (() => {
 				sm-width="100%"
 				min-width="auto"
 				margin="0px 32px 0px 32px"
-				align-items="flex-start"
+				align-items="flex-end"
 				lg-height="520px"
 				md-height="420px"
 				md-padding="0px 24px 0px 24px"
@@ -65,17 +76,21 @@ export default (() => {
 				sm-width="80%"
 				lg-text-align="center"
 				lg-font="--headline2"
-				color="--light"
+				color="rgb(11, 61, 89,1)"
+				background="rgba(0,0,0, 0)"
 			>
-				IAESTE - Hamburg
+				<Strong>
+					IAESTE Hamburg
+				</Strong>
 			</Text>
 			<Text
 				sm-text-align="center"
 				sm-width="80%"
 				md-text-align="center"
 				font="normal 400 24px/1.5 --fontFamily-googleNunitoSans"
-				color="--light"
+				color="rgb(11, 61, 89)"
 				margin="10px 0px 35px 0px"
+				text-transform="uppercase"
 			>
 				Work. Experience. Discover.
 				<br />
@@ -122,14 +137,15 @@ export default (() => {
 					background="--color-lightD2 url(https://uploads.quarkly.io/670812fbe5d277001898861a/images/Outgoing.jpg?v=2024-10-11T18:10:37.078Z) center center/100% no-repeat"
 					padding="0px 0px 60% 0px"
 					height="0px"
-					hover-background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-first.svg?v=2020-11-06T16:37:39.391Z) center center/110% no-repeat"
+					hover-background="--color-lightD2 url(https://uploads.quarkly.io/670812fbe5d277001898861a/images/Outgoing.jpg?v=2024-10-11T18:10:37.078Z) center center/110% no-repeat"
 					transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
+					pointer-events="none"
 				>
 					<Link
 						text-align="center"
 						margin="48px 0px 0px 0px"
 						hover-transform="translateY(-4px)"
-						href="/contact"
+						href="/about"
 						color="--light"
 						font="--base"
 						transition="transform --transitionDuration-fast --transitionTimingFunction-easeInOut 0s"
@@ -151,14 +167,14 @@ export default (() => {
 					background="--color-lightD2 url(https://uploads.quarkly.io/670812fbe5d277001898861a/images/incmoing.png?v=2024-10-11T18:11:18.394Z) center center/100% no-repeat"
 					padding="0px 0px 60% 0px"
 					height="0px"
-					hover-background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-second.svg?v=2020-11-06T17:14:59.136Z) center center/110% no-repeat"
 					transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
+					hover-background="--color-lightD2 url(https://uploads.quarkly.io/670812fbe5d277001898861a/images/incmoing.png?v=2024-10-11T18:11:18.394Z) center center/110% no-repeat"
 				>
 					<Link
 						text-align="center"
 						margin="48px 0px 0px 0px"
 						hover-transform="translateY(-4px)"
-						href="/contact"
+						href="/team"
 						color="--light"
 						padding="8px 18px 8px 18px"
 						font="--base"
@@ -180,14 +196,14 @@ export default (() => {
 					background="--color-lightD2 url(https://uploads.quarkly.io/670812fbe5d277001898861a/images/Handshake.jpg?v=2024-10-11T18:11:38.740Z) center center/100% no-repeat"
 					padding="0px 0px 60% 0px"
 					height="0px"
-					hover-background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-third.svg?v=2020-11-06T17:15:50.700Z) center center/110% no-repeat"
+					hover-background="--color-lightD2 url(https://uploads.quarkly.io/670812fbe5d277001898861a/images/Handshake.jpg?v=2024-10-11T18:11:38.740Z) center center/110% no-repeat"
 					transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
 				>
 					<Link
 						text-align="center"
 						margin="48px 0px 0px 0px"
 						hover-transform="translateY(-4px)"
-						href="/contact"
+						href="/work"
 						color="--light"
 						padding="8px 18px 8px 18px"
 						font="--base"
@@ -255,7 +271,7 @@ export default (() => {
 				Connecting students and employers in more than 80 countries worldwide.
 			</Text>
 		</Section>
-		<Section padding="80px 0 80px 0" quarkly-title="Customers" lg-padding="50px 0 50px 0" justify-content="center">
+		<Section padding="80px 0 20px 0" quarkly-title="Customers" lg-padding="50px 0 50px 0" justify-content="center">
 			<Override
 				slot="SectionContent"
 				min-width="auto"
@@ -332,199 +348,24 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section
-			quarkly-title="USP"
-			padding="75px 0 50px 0"
-			lg-padding="50px 0 25px 0"
-			lg-height="auto"
-			justify-content="center"
-			border-color="#ec0808"
-		>
+		<Components.EsteFooter padding="0 0 0 0" background="rgb(11, 61, 89,1)">
+			<Override slot="box" height="min-content" width="100% border-box" padding="0 24px 0 24px" />
+			<Override slot="text" color="#ffffff" />
+			<Override slot="text1" color="--light" />
+			<Override slot="icon" color="--light" />
+			<Override slot="text2" color="--light" />
+			<Override slot="icon1" color="--light" />
+			<Override slot="icon2" color="--light" />
 			<Override
-				slot="SectionContent"
-				md-margin="0px 16px 0px 16px"
-				min-width="auto"
-				width="100%"
-				margin="0px 32px 0px 32px"
-				opacity="1"
+				slot="text3"
+				color="--light"
+				text-align="center"
+				pointer-events="none"
+				user-select="none"
+				as="span"
 			/>
-			<Box
-				justify-content="center"
-				flex-direction="column"
-				md-min-height="360px"
-				min-height="480px"
-				padding="36px 24px 36px 24px"
-				align-items="center"
-				sm-min-height="280px"
-				display="flex"
-				lg-min-height="420px"
-				mix-blend-mode="screen"
-				border-color="#F7FBFF"
-			>
-				<Text
-					color="rgb(11, 61, 89,1)"
-					md-font="--headline3"
-					margin="10px 0px 15px 0px"
-					font="--headline2"
-					text-align="center"
-					quarkly-title="Title"
-					border-color="rgb(11, 61, 89)"
-				>
-					Get In Touch!
-				</Text>
-				<Box
-					min-width="100px"
-					min-height="100px"
-					display="flex"
-					flex-direction="row"
-					flex-wrap="no-wrap"
-				>
-					<Icon
-						category="fa"
-						icon={FaInstagram}
-						size="64px"
-						border-color="#ffffff"
-						color="#000000"
-					/>
-					<Text
-						color="rgb(11, 61, 89, 1)"
-						opacity="1"
-						lg-text-align="center"
-						text-align="center"
-						md-margin="16px 0px 0px 0px"
-						sm-margin="0px 0px 0px 0px"
-						font="normal 500 20px/1.5 --fontFamily-googleNunitoSans"
-						margin="16px 0px 16px 1em"
-					>
-						<Strong
-							overflow-wrap="normal"
-							word-break="normal"
-							white-space="normal"
-							text-indent="0"
-							text-overflow="clip"
-							hyphens="manual"
-							user-select="auto"
-							pointer-events="auto"
-						>
-							@iaestehamburg
-						</Strong>
-					</Text>
-				</Box>
-				<Box
-					min-width="100px"
-					min-height="100px"
-					display="flex"
-					flex-direction="row"
-					flex-wrap="no-wrap"
-				>
-					<Icon
-						category="fa"
-						icon={FaMailBulk}
-						size="64px"
-						border-color="#ffffff"
-						color="#000000"
-					/>
-					<Text
-						color="rgb(11, 61, 89,1)"
-						opacity="1"
-						lg-text-align="center"
-						text-align="center"
-						md-margin="16px 0px 0px 0px"
-						sm-margin="0px 0px 0px 0px"
-						font="normal 500 20px/1.5 --fontFamily-googleNunitoSans"
-						margin="16px 0px 16px 1em"
-					>
-						<Strong
-							overflow-wrap="normal"
-							word-break="normal"
-							white-space="normal"
-							text-indent="0"
-							text-overflow="clip"
-							hyphens="manual"
-							user-select="auto"
-							pointer-events="auto"
-						>
-							<Link href="mailto:info%20%C3%A4-t%20iaeste-hamburg.de" font="20px/30px --fontFamily-googleNunitoSans" color="rgb(11, 61, 89, 1)">
-								info ä-t iaeste-hamburg.de
-							</Link>
-						</Strong>
-					</Text>
-				</Box>
-				<Box
-					min-width="100px"
-					min-height="100px"
-					display="flex"
-					flex-direction="row"
-					flex-wrap="no-wrap"
-				>
-					<Icon
-						category="io"
-						icon={IoIosPin}
-						size="64px"
-						border-color="#ffffff"
-						color="#000000"
-					/>
-					<Text
-						color="rgb(11, 61, 89,1)"
-						opacity="1"
-						lg-text-align="center"
-						text-align="center"
-						md-margin="16px 0px 0px 0px"
-						sm-margin="0px 0px 0px 0px"
-						font="normal 500 20px/1.5 --fontFamily-googleNunitoSans"
-						margin="16px 0px 16px 1em"
-					>
-						<Link href="https://maps.app.goo.gl/tMnBegozjpGcTtgB7" color="rgb(11, 61, 89)" target="_blank">
-							Schloßmühlendamm 30-32, Room 223, 21073 Hamburg
-						</Link>
-						{"\n\n"}
-					</Text>
-				</Box>
-			</Box>
-		</Section>
-		<Section
-			margin="0 0 0 0"
-			padding="16px 0 16px 0"
-			box-sizing="border-box"
-			quarkly-title="Footer"
-			justify-content="center"
-		>
-			<Override
-				slot="SectionContent"
-				width="100%"
-				md-margin="0px 16px 0px 16px"
-				min-width="auto"
-				margin="0px 32px 0px 32px"
-			/>
-			<Box
-				grid-gap="32px"
-				width="100%"
-				grid-template-columns="repeat(2, 1fr)"
-				sm-grid-gap="16px"
-				display="grid"
-			>
-				<Box display="flex" align-items="center" sm-flex-wrap="wrap">
-					<Image width="28px" height="28px" src="https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-quarkly-logo-grey.svg?v=2020-11-06T17:24:35.270Z" />
-					<Link
-						white-space="nowrap"
-						font="--base"
-						opacity="0.6"
-						text-align="left"
-						margin="1px 0px 0px 10px"
-						href="https://quarkly.io/"
-						color="--dark"
-						text-decoration-line="initial"
-						hover-text-decoration-line="underline"
-					>
-						Made on Quarkly
-					</Link>
-				</Box>
-				<SocialMedia facebook="https://www.facebook.com/quarklyapp/" twitter="https://twitter.com/quarklyapp" youtube="https://www.youtube.com/channel/UCK5bXs2L0bbSMQ82BQ3hIkw" justify-content="flex-end">
-					<Override slot="link" background="none" border-radius="50%" />
-					<Override slot="icon" color="--dark" />
-				</SocialMedia>
-			</Box>
-		</Section>
+			<Override slot="SectionContent" id="footer" />
+		</Components.EsteFooter>
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
@@ -547,5 +388,10 @@ export default (() => {
 		>
 			Made on Quarkly
 		</Link>
+		<RawHtml>
+			<style place={"endOfHead"} rawKey={"670f7a17b153825dca7dd82d"}>
+				{"a {\n            color: white;\n        }"}
+			</style>
+		</RawHtml>
 	</Theme>;
 });
