@@ -47,27 +47,58 @@ export default (() => {
 				sm-min-height="180px"
 				width="100%"
 				min-height="480px"
-				display="flex"
 				align-items="center"
 				justify-content="center"
 				background="radial-gradient(at center,--color-darkL2 23.3%,rgba(0,0,0,0) 82.4%),linear-gradient(180deg,rgba(155, 108, 252, 0.15) 0%,transparent 100%) 0 0 no-repeat,--color-darkL2"
 				md-min-height="360px"
+				display="inline-block"
 			>
 				<Text
-					justify-content="center"
+					justify-content="left"
 					quarkly-title="Title"
-					text-align="center"
+					text-align="left"
 					sm-text-align="center"
 					md-font="--headline2"
-					font="--headline1"
+					font="--headline2"
 					margin="0px 0px 0px 0px"
 					display="flex"
 					align-items="center"
 					color="--light"
 					sm-font="normal 900 42px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
 					lg-font="--headline2"
+					position="relative"
+					top="20px"
+					left="20px"
 				>
-					Our Works.
+					Grow your company's
+				</Text>
+				<Text
+					display="inline-block"
+					position="relative"
+					left="20px"
+					top="20px"
+					font="--headline3"
+					color="#ffffff"
+				>
+					Cultural Capital
+				</Text>
+				<Text
+					display="block"
+					position="relative"
+					left="20px"
+					top="0px"
+					color="#ffffff"
+				>
+					Social Impact
+				</Text>
+				<Text
+					display="block"
+					position="relative"
+					left="20px"
+					top="0px"
+					color="#ffffff"
+				>
+					Global Business
 				</Text>
 			</Box>
 		</Section>
@@ -486,7 +517,7 @@ export default (() => {
 		</Link>
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"670f7a17b153825dca7dd82d"}>
-				{"a {\n            color: white;\n        }\n\n#logo {\n            width: 160px;\n        }\n#menuentry {\n           width: max-content !important;\n        }"}
+				{"a {\n            color: white;\n        }\n#logo {\n            width: 160px;\n        }\n#menuentry {\n           width: max-content !important;\n        }"}
 			</style>
 		</RawHtml>
 	</Theme>;

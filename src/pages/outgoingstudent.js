@@ -48,7 +48,7 @@ export default (() => {
 			/>
 			<Box
 				align-items="center"
-				display="flex"
+				display="inline-block"
 				justify-content="center"
 				background="radial-gradient(at center,--color-darkL2 23.3%,rgba(0,0,0,0) 82.4%),linear-gradient(180deg,rgba(155, 108, 252, 0.15) 0%,transparent 100%) 0 0 no-repeat,--color-darkL2"
 				md-min-height="360px"
@@ -57,20 +57,60 @@ export default (() => {
 				min-height="480px"
 			>
 				<Text
-					font="--headline1"
-					margin="0px 0px 0px 0px"
+					justify-content="left"
 					quarkly-title="Title"
+					text-align="left"
 					sm-text-align="center"
-					text-align="center"
 					md-font="--headline2"
-					display="flex"
+					font="--headline2"
+					margin="0px 0px 0px 0px"
+					display="block"
 					align-items="center"
 					color="--light"
-					justify-content="center"
 					sm-font="normal 900 42px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
 					lg-font="--headline2"
+					position="relative"
+					top="20px"
+					left="20px"
 				>
-					About Us.
+					Are you ready to go international?
+				</Text>
+				<Text
+					display="inline-block"
+					position="relative"
+					left="20px"
+					top="20px"
+					font="--headline3"
+					color="#ffffff"
+				>
+					Experience new languages and cultures
+				</Text>
+				<Text
+					display="block"
+					position="relative"
+					left="20px"
+					top="0px"
+					color="#ffffff"
+				>
+					Develop your character
+				</Text>
+				<Text
+					display="block"
+					position="relative"
+					left="20px"
+					top="0px"
+					color="#ffffff"
+				>
+					Learn novel skills and techniques
+				</Text>
+				<Text
+					display="block"
+					position="relative"
+					left="20px"
+					top="0px"
+					color="#ffffff"
+				>
+					And get paid for it all?
 				</Text>
 			</Box>
 		</Section>
@@ -472,7 +512,7 @@ export default (() => {
 		</Link>
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"670f7a17b153825dca7dd82d"}>
-				{"a {\n            color: white;\n        }\n\n#logo {\n            width: 160px;\n        }\n#menuentry {\n           width: max-content !important;\n        }"}
+				{"a {\n            color: white;\n        }\n#logo {\n            width: 160px;\n        }\n#menuentry {\n           width: max-content !important;\n        }"}
 			</style>
 		</RawHtml>
 	</Theme>;

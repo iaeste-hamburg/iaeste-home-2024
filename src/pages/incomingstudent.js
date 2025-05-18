@@ -74,7 +74,7 @@ export default (() => {
 					sm-font="normal 900 42px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
 					text-align="center"
 				>
-					Team.
+					⚓ Welcome to Hamburg ⚓
 				</Text>
 			</Box>
 		</Section>
@@ -683,7 +683,7 @@ export default (() => {
 		</Link>
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"670f7a17b153825dca7dd82d"}>
-				{"a {\n            color: white;\n        }\n\n#logo {\n            width: 160px;\n        }\n#menuentry {\n           width: max-content !important;\n        }"}
+				{"a {\n            color: white;\n        }\n#logo {\n            width: 160px;\n        }\n#menuentry {\n           width: max-content !important;\n        }"}
 			</style>
 		</RawHtml>
 	</Theme>;
