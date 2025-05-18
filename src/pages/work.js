@@ -7,10 +7,10 @@ import { RawHtml, Override } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
-		<GlobalQuarklyPageStyles pageUrl={"work"} />
+		<GlobalQuarklyPageStyles pageUrl={"employers"} />
 		<Helmet>
 			<title>
-				Work | Website Example
+				Employers | IAESTE Hamburg
 			</title>
 			<meta name={"description"} content={"It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something bigger. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference."} />
 			<meta property={"og:title"} content={"Work | Website Example"} />
